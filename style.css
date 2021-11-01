@@ -33,7 +33,7 @@ nav.navbar {
     position: fixed;
     z-index: 1;
     color: white;
-    background-color: rgba(85, 121, 119, 0.55)
+    background-color: rgba(85, 121, 119, 0.55);
 }
 
 .nav-bar-spacing {
@@ -77,10 +77,15 @@ div.dropdown-menu {
     position: relative;
 }
 
-.about-text:hover, #drop-down-menu1:hover {
-    display: block;
-    position: relative;
+
+.about-hover:hover/*, #drop-down-menu1*/ { 
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
     z-index: 450;
+    background-color: rgba(85, 121, 119, 0.55);
+    /* height: 15%;
+    width: 15%; */
 }
 
 .help-text:hover {
@@ -94,9 +99,16 @@ div.dropdown-menu {
 }
 
 #drop-down-menu1:hover {
-    display: block;
+    /* display: block;
     position: relative;
-    z-index: 400;
+    z-index: 400; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 450;
+    background-color: rgba(85, 121, 119, 0.55);
+    height: 15%;
+    width: 15%;
 }
 
 #drop-down-menu2:hover {
